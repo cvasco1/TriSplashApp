@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "TriSplashApp",
+    "slug": "TriSplashApp",
+    "scheme": "trisplashapp",
+
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/tri.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-router"
+    ]
+  }
+}
