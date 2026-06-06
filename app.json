@@ -10,7 +10,7 @@
         {
           "image": "./assets/images/tri.png",
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#003DA5"
         }
       ],
       "expo-router"
