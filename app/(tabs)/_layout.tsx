@@ -8,6 +8,15 @@ export default function TabLayout() {
         headerShown: false,
         tabBarActiveTintColor: '#0F9D58',
         tabBarInactiveTintColor: 'gray',
+
+       // 👇 AQUÍ VA
+          tabBarStyle: {
+          backgroundColor: "#fff",
+          //borderTopLeftRadius: 15,
+          //borderTopRightRadius: 15,
+          height: 60,
+        },
+
       }}
     >
       <Tabs.Screen
