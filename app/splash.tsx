@@ -1,10 +1,11 @@
 import { router } from "expo-router";
 import { useEffect, useRef } from "react";
 import {
-    Animated,
-    ImageBackground,
-    StyleSheet,
-    View,
+  Animated,
+  ImageBackground,
+  StyleSheet,
+  Text,
+  View,
 } from "react-native";
 
 export default function SplashScreen() {
@@ -45,6 +46,12 @@ export default function SplashScreen() {
           style={styles.background}
         />
       </Animated.View>
+      
+        <View style={styles.textContainer}>
+          <Text style={styles.slogan}>
+            Más que una selección, somos un país entero
+          </Text>
+        </View>
     </View>
   );
 }
@@ -60,5 +67,26 @@ const styles = StyleSheet.create({
 
   background: {
     flex: 1,
+  },
+
+  textContainer: {
+    position: "absolute",
+    bottom: 50,
+    width: "100%",
+    alignItems: "center",
+    paddingHorizontal: 20,
+  },
+
+  slogan: {
+    color: "#FFFFFF",
+    fontSize: 18,
+    fontWeight: "600",
+    textAlign: "center",
+    textShadowColor: "rgba(0,0,0,0.5)",
+    textShadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    textShadowRadius: 4,
   },
 });
